@@ -4,6 +4,28 @@
     <meta charset="UTF-8" />
     <title>Who Am I?</title>
     <style>
+        ul.navagation_bar{
+            list-style-type: none;
+            padding: 25px;
+            overflow: hidden;
+            background-color: rgb(231, 157, 180);
+            font-size: large;
+            text-align: center;
+        }
+        ul.navagation_bar li{
+            font-family: 'Times New Roman', Times, serif;
+            display: inline-block;
+        }
+        ul.navagation_bar li a{
+            display: block;
+            text-align: center;
+            padding: 15px 20px 15px 20px;
+            text-decoration: none;
+        }
+        ul.navagation_bar li a:hover{
+            background-color: rgba(144, 240, 240, 0.7);
+        }
+
         table.pastexperiences{
             font-family: 'Times New Roman', Times, serif;
             border-collapse: collapse;
@@ -43,11 +65,18 @@
             width: 12.5%;
             padding:25px;
             border: 1px solid rgb(12, 85, 79);
+            cursor: pointer;
         }
-        
         table.booking td:hover {
             background-color: rgb(255, 205, 226);
-        } */
+        }
+
+        table.booking td a{
+            display: block;
+            text-align: center;
+            padding: 15px 20px 15px 20px;
+            text-decoration: none;
+        }
 
     </style>
 </head>
@@ -58,15 +87,21 @@
             <img src="/Users/cherry/Desktop/4253153ccdc7312ca49679461d8d1ee2.jpg" height="100" width="100" style="vertical-align:middle">
         </h1>
     </header>
-        <ul>
-            <pre>
-                <li style="color: rgb(157, 56, 19);">AKA -> <del>computer science student</del></li>
-                <li style="color: rgb(168, 61, 61);">AKA -> <del>youtuber</del></li>
-                <li style="color: rgb(162, 76, 162);">AKA -> <del>from myanmar to taiwan overseas student</del></li>
-                <li style="color: rgb(32, 122, 122);">AKA -> <del>nccu student</del></li>
-                <li><b>someone who writes this page you are looking at</b> <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaW5sYTZoc2ZkeHl5bmppaWl1ZTMzZjJ0MG43dGV3YWRvcTZtbG02diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" alt="Computer man" style="width:75px;height:75px;" style="vertical-align:bottom;"> </li>
-            </pre>
         </ul>
+        <ul class="navagation_bar">
+            <li><a href="#about-section" >About</a></li>
+            <li><a href="#pastexperiences" >Past experiences</a></li>
+            <li><a href="#booking" >Schedule</a></li>
+            <li><a href="" >Contact Me</a></li>
+        </ul>
+        <section id="about-section">
+            <dev class="about-section">
+                <li style="color: rgb(157, 56, 19); text-align: center;">AKA -> <del>computer science student</del></li>
+                <li style="color: rgb(168, 61, 61); text-align: center;">AKA -> <del>youtuber</del></li>
+                <li style="color: rgb(162, 76, 162); text-align: center;">AKA -> <del>from myanmar to taiwan overseas student</del></li>
+                <li style="color: rgb(32, 122, 122); text-align: center;">AKA -> <del>nccu student</del></li>
+                <li style="text-align: center;"><b>someone who writes this page you are looking at</b> <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaW5sYTZoc2ZkeHl5bmppaWl1ZTMzZjJ0MG43dGV3YWRvcTZtbG02diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RbDKaczqWovIugyJmW/giphy.gif" alt="Computer man" style="width:75px;height:75px;" style="vertical-align:bottom;"> </li>
+            </dev>
         <p title="introducing the channel" style="text-shadow: rgb(245, 185, 163); text-align: center;">OH, in case you are wondering, here is my youtube.check it out and you won't regret!
         <a href="https://www.youtube.com/channel/UCcyC2YkrA7YrOSXiZG68s6Q" target="_blank"><img src="/Users/cherry/Desktop/3a36206f35352b4230d5fc9f17fcea92.jpg" height="50" width="65" style="vertical-align: middle;"></a></p>
         <hr>
@@ -75,7 +110,9 @@
             <map name="glass">
                 <area shape="poly" coords="102,295,161,775,456,299,398,763" title="wine glass" href="https://medium.com/@goveg/cows-have-best-friends-and-panic-when-separated-from-them-7506ec3b474f" target="_blank">
             </map>
-            <hr>
+        </section>
+            <br>
+            <section id="pastexperiences">
                 <h2 style="text-align: center;">What I have been doing for the couple of past few years</h2>
                 <table class="pastexperiences">
                     <tr>
@@ -99,8 +136,9 @@
                         <td>2023-till now</td>
                     </tr>
                 </table>
+            </section>
                 <br>
-            <hr>
+            <section id="booking">
                 <h2 style="text-align: center;">Want to book me?</h2>
                 <table style="width:100%" class="booking">
                     <tr>
@@ -115,48 +153,52 @@
                     </tr>
                     <tr>
                         <td> 9:00am ~ 11:00 am </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
                     </tr>
                     <tr>
                         <td> 1:00 pm ~ 3:00 pm </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
+                       <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
                     </tr>
                     <tr>
                         <td> 4:00 pm ~ 6:00 pm </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
-                        <td>  </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
                         <td style="background-color: rgba(12, 85, 79, 0.5);"> Booked </td>
-                        <td>  </td>
+                        <td><a href="#contact-me">Available</a> </td>
                     </tr>
                     <tr>
                         <td> 7:00 pm ~ 9:00 pm </td>
-                        <td>  </td>
+                        <td><a href="#contact-me">Available</a> </td>
                         <td style="background-color: rgba(12, 85, 79, 0.5);"> Booked </td>
                         <td style="background-color: rgba(12, 85, 79, 0.5);"> Booked </td>
                         <td style="background-color: rgba(12, 85, 79, 0.5);"> Booked </td>
-                        <td >  </td>
-                        <td>  </td>
-                        <td>  </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
+                        <td><a href="#contact-me">Available</a> </td>
                     </tr>
                 </table>
+            </section>
                 <br>
                 <hr>
-
-<h3>waht is going on???</h3>
+            <section id="contact-me">
+                <h2>
+                    You are just a few steps away~
+                </h2>
+            </section>
 </body>
 </html>
